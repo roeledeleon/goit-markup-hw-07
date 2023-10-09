@@ -147,15 +147,16 @@ ul {
   margin: 0;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -373,6 +374,22 @@ span#studio:hover {
 
   margin: 0 auto;
 }
+
+@media screen and (min-width: 768px) {
+  .main-overlay {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .main-overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 100%;
+  }
+}
+
 .main-title {
   font-family: Roboto;
   font-size: 56px;
@@ -418,26 +435,56 @@ button {
   transition: background-color 250ms var(--timing-function);
 }
 
-.features {
-  padding-top: 120px;
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 96px;
+  }
 }
+@media screen and (min-width: 1158px) {
+  .features {
+    padding-top: 120px;
+  }
+}
+
 .features-list {
   display: flex;
   margin-left: 0px;
   justify-content: center;
-}
-.features-thumbnail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 264px;
-  height: 112px;
-
-  border-radius: 4px;
-  background-color: var(--CLOUD);
 }
-.features-item {
-  flex-basis: calc((100% - 3 * var(--section-item-gap)) / 4);
+
+@media screen and (min-width: 768px) {
+  .features-thumbnail {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+
+    border-radius: 4px;
+    background-color: var(--CLOUD);
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-item {
+    display: flex;
+    /* flex-basis: calc((100% - 2* var(--section-item-gap)) / 4); */
+    flex-wrap: wrap;
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features-item {
+    display: flex;
+    /* flex-basis: calc((100% - 2* var(--section-item-gap)) / 4); */
+    flex-wrap: wrap;
+    width: 264px;
+  }
 }
 .features-item + .features-item {
   margin-left: var(--section-item-gap);
