@@ -221,10 +221,11 @@ ul {
 /* End of General Styles */
 
 /* HEADER Styles */
+/*
 .header-elements {
   display: flex;
   border: none;
-}
+}*/
 .logo,
 .logo-footer {
   color: var(--highlight-text-color);
@@ -251,25 +252,30 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-.nav-line {
-  background: var(--bg-color);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--top-line-color-bg);
-}
+
 @media screen and (min-width: 768px) {
   .nav-line {
     display: flex;
-    justify-content: space-between;
+
+    background: var(--bg-color);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--top-line-color-bg);
   }
   .nav-list {
     display: flex;
+    margin-left: 148px;
   }
 }
 @media screen and (min-width: 1158px) {
   .nav-line {
     display: flex;
     justify-content: left;
+
+    background: var(--bg-color);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--top-line-color-bg);
   }
   .nav-list {
     display: flex;
@@ -336,10 +342,10 @@ span#studio:hover {
     display: inline-flex;
     justify-content: center;
     row-gap: 8px;
-    align-content: flex-end;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
+    margin-left: 121px;
   }
   .contact-item {
     margin-left: 0px;
@@ -402,6 +408,14 @@ span#studio:hover {
   .navigation,
   .contact-list {
     display: none;
+  }
+  .nav-line {
+    height: 70px;
+
+    background: var(--bg-color);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--top-line-color-bg);
   }
 }
 /* End of HEADER Styles */
@@ -561,8 +575,34 @@ button {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-elements {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--top-line-color-bg);
+  }
+  svg.nav-menu-icon {
+    stroke: var(--NAVY-BLUE);
+    margin-right: 16px;
+  }
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-thumbnail {
+    display: none;
+  }
+  svg.nav-menu-icon {
     display: none;
   }
 }
@@ -576,6 +616,9 @@ button {
 
     border-radius: 4px;
     background-color: var(--CLOUD);
+  }
+  svg.nav-menu-icon {
+    display: none;
   }
 }
 
@@ -714,7 +757,6 @@ button {
 .team-designation {
   padding-bottom: calc(var(--section-item-gap) / 3);
 }
-
 .socials {
   display: flex;
   padding-left: var(--section-item-gap);
@@ -869,8 +911,8 @@ a.client6:hover svg.client6-icon-b {
 }
 @media screen and (max-width: 767px) {
   .section-project {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: calc(2 * var(--section-item-gap));
+    padding-bottom: calc(2 * var(--section-item-gap));
   }
   .filter-list {
     display: flex;
@@ -881,13 +923,13 @@ a.client6:hover svg.client6-icon-b {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .section-project {
     padding-top: 64px;
-    padding-bottom: 96px;
+    padding-bottom: calc(4 * var(--section-item-gap));
   }
 }
 @media screen and (min-width: 1158px) {
   .section-project {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: calc(5 * var(--section-item-gap));
   }
 }
 .btn {
@@ -933,8 +975,8 @@ a.client6:hover svg.client6-icon-b {
     padding-top: 48px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    column-gap: calc(1 * var(--section-item-gap));
+    row-gap: calc(2 * var(--section-item-gap));
   }
   .project-item {
     width: 396px;
@@ -944,14 +986,18 @@ a.client6:hover svg.client6-icon-b {
     border: 1px solid var(--border-color);
     background: var(--bg-color);
   }
+  img.image {
+    width: 396px;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .project-list {
     padding-top: 64px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
+    column-gap: var(--section-item-gap);
+    row-gap: calc(3 * var(--section-item-gap));
   }
   .project-item {
     width: 356px;
@@ -965,11 +1011,11 @@ a.client6:hover svg.client6-icon-b {
 @media screen and (min-width: 1158px) {
   .project-list {
     /* layout */
-    padding-top: 72px;
+    padding-top: calc(3 * var(--section-item-gap));
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    column-gap: calc(1 * var(--section-item-gap));
+    row-gap: calc(2 * var(--section-item-gap));
     flex-direction: row;
   }
   .project-item {
@@ -1026,7 +1072,6 @@ a.client6:hover svg.client6-icon-b {
   height: 300px;
   flex-shrink: 0;
 }
-
 .project-item:hover {
   /* layout */
   border: 1px solid var(--CLOUD);
@@ -1072,14 +1117,14 @@ a.client6:hover svg.client6-icon-b {
 
 @media screen and (min-width: 428px) {
   .footer-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: calc(3 * var(--section-item-gap));
+    padding-bottom: calc(3 * var(--section-item-gap));
   }
 }
 @media screen and (min-width: 1158px) {
   .footer-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: calc(5 * var(--section-item-gap));
+    padding-bottom: calc(5 * var(--section-item-gap));
   }
 }
 
@@ -1108,7 +1153,7 @@ a.client6:hover svg.client6-icon-b {
   }
 
   .footer-text-item {
-    margin-top: calc(3 * var(--section-item-gap));
+    margin-top: 96px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1135,7 +1180,7 @@ a.client6:hover svg.client6-icon-b {
 }
 @media screen and (min-width: 768px) {
   .footer-socials-container {
-    padding-left: 24px;
+    padding-left: calc(1 * var(--section-item-gap));
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1371,8 +1416,8 @@ svg.close-black-18dp-1b {
 .modal-title {
   position: absolute;
 
-  top: 48px;
-  right: 48px;
+  top: calc(2 * var(--section-item-gap));
+  right: calc(2 * var(--section-item-gap));
 
   display: flex;
   justify-content: center;
