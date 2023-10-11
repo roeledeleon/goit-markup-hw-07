@@ -29,6 +29,10 @@
 
   --section-item-gap: 24px;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sml: 390px;
+  --med: 768px;
+  --lrg: 1158px;
 }
 
 body {
@@ -81,17 +85,17 @@ body {
 }
 @media screen and (min-width: 428px) {
   .container {
-    width: 428px;
+    width: var(--sml);
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: var(--med);
   }
 }
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    width: var(--lrg);
   }
 }
 .container_header {
