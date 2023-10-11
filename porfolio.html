@@ -1048,6 +1048,7 @@
             >Web<span id="studio">Studio</span>
           </a>
           <!-- Navigation -->
+
           <nav class="navigation">
             <ul class="nav-list list">
               <li class="nav-item">
@@ -1077,11 +1078,93 @@
               >
             </li>
           </ul>
-          <a href="" class="nav-menu-icon nav-icon">
-            <svg class="nav-menu-icon" width="32" height="22">
+          <div class="nav-button">
+            <button
+              class="nav-menu-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-mobile-menu-open=""
+            >
+              <svg class="nav-menu-icon" width="32" height="22">
+                <use xlink:href="#icon-charm_menu-hamburger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+        <div class="mobile-menu_container">
+          <button
+            class="close-btn mobile-menu_close-btn"
+            type="button"
+            data-mobile-menu-close
+          >
+            <svg
+              class="close-btn_icon"
+              width="40"
+              height="40"
+              aria-label="Close mobile menu button"
+            >
               <use xlink:href="#icon-charm_menu-hamburger"></use>
             </svg>
-          </a>
+          </button>
+          <nav>
+            <ul class="mobile-menu__nav nav nav--type--column list">
+              <li class="nav__item nav__item--indent--top">
+                <a
+                  href=""
+                  class="nav__link nav__link--size--M nav__link--active link"
+                  >Site</a
+                >
+              </li>
+              <li class="nav__item nav__item--indent--top">
+                <a
+                  href="./portfolio.html"
+                  class="nav__link nav__link--size--M link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav__item nav__item--indent--top">
+                <a href="" class="nav__link nav__link--size--M link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__item">
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu__link mobile-menu__link--accent link"
+              >
+                +11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="mobile-menu__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__link link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="socials mobile-menu__socials list">
+            <li class="socials__item">
+              <a href="" class="socials__link link">Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link link">Twitter</a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link link">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -1398,5 +1481,6 @@
         </div>
       </div>
     </footer>
+    <script src="../goit-markup-hw-07/js/mobile-menu.js"></script>
   </body>
 </html>
