@@ -1048,7 +1048,6 @@
             >Web<span id="studio">Studio</span>
           </a>
           <!-- Navigation -->
-
           <nav class="navigation">
             <ul class="nav-list list">
               <li class="nav-item">
@@ -1094,75 +1093,88 @@
         </div>
       </div>
       <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
-        <div class="mobile-menu_container">
-          <button
-            class="close-btn mobile-menu_close-btn"
-            type="button"
-            data-mobile-menu-close
-          >
-            <svg
-              class="close-btn_icon"
-              width="40"
-              height="40"
-              aria-label="Close mobile menu button"
-            >
-              <use xlink:href="#icon-charm_menu-hamburger"></use>
-            </svg>
-          </button>
+        <div class="mm_container">
+          <div class="mm_button" data-model-close>
+            <a href="" class="mm_close-link">
+              <svg
+                class="mm_button-icon-default close-black-18dp-1a"
+                width="8"
+                height="8"
+              >
+                <use xlink:href="#icon-close-black-18dp-1a"></use>
+              </svg>
+              <svg
+                class="mm_button-icon-hover close-black-18dp-1b"
+                width="8"
+                height="8"
+              >
+                <use xlink:href="#icon-close-black-18dp-1b"></use>
+              </svg>
+            </a>
+          </div>
           <nav>
-            <ul class="mobile-menu__nav nav nav--type--column list">
-              <li class="nav__item nav__item--indent--top">
-                <a
-                  href=""
-                  class="nav__link nav__link--size--M nav__link--active link"
+            <ul class="mm_nav-list list">
+              <li class="mm_nav-item mm_nav-title">
+                <a href="./index.html" class="mm_nav-link mm_item mm_link"
                   >Site</a
                 >
               </li>
-              <li class="nav__item nav__item--indent--top">
-                <a
-                  href="./portfolio.html"
-                  class="nav__link nav__link--size--M link"
+              <li class="mm_nav-item mm_nav-title">
+                <a href="./porfolio.html" class="mm_nav-link mm_item mm_current"
                   >Portfolio</a
                 >
               </li>
-              <li class="nav__item nav__item--indent--top">
-                <a href="" class="nav__link nav__link--size--M link"
-                  >Contacts</a
-                >
+              <li class="mm_nav-item mm_nav-title">
+                <a href="" class="mm_nav-link mm_item mm_link">Contacts</a>
               </li>
             </ul>
           </nav>
-          <ul class="mobile-menu__contacts list">
-            <li class="mobile-menu__item">
+          <ul class="mm_contact-list list">
+            <li class="mm_contact-item">
               <a
-                href="tel:+380961111111"
-                class="mobile-menu__link mobile-menu__link--accent link"
+                href="tel:+1100011111"
+                class="mm_contact-number mm_contact-link mm_item"
               >
                 +11 (000) 111-11-11</a
               >
             </li>
-
-            <li class="mobile-menu__item">
+            <li class="mm_contact-item">
               <a
                 href="mailto:info@devstudio.com"
-                class="mobile-menu__link link"
+                class="mm_contact-email mm_contact-link mm_item"
               >
                 info@devstudio.com
               </a>
             </li>
           </ul>
-          <ul class="socials mobile-menu__socials list">
-            <li class="socials__item">
-              <a href="" class="socials__link link">Instagram</a>
+          <ul class="mm_socials list">
+            <li class="mm_socials-item">
+              <a href="" class="mm_socials-link">
+                <svg class="socials-icon" width="24" height="24">
+                  <use xlink:href="#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
-            <li class="socials__item">
-              <a href="" class="socials__link link">Twitter</a>
+            <li class="mm_socials-item">
+              <a href="" class="mm_socials-link">
+                <svg class="mm_socials-icon" width="24" height="24">
+                  <use xlink:href="#icon-twitter-1"></use>
+                </svg>
+              </a>
             </li>
-            <li class="socials__item">
-              <a href="" class="socials__link link">Facebook</a>
+            <li class="mm_socials-item">
+              <a href="" class="mm_socials-link">
+                <svg class="mm_socials-icon" width="24" height="24">
+                  <use xlink:href="#icon-facebook-1"></use>
+                </svg>
+              </a>
             </li>
-            <li class="socials__item">
-              <a href="" class="socials__link link">LinkedIn</a>
+            <li class="mm_socials-item">
+              <a href="" class="mm_socials-link">
+                <svg class="mm_socials-icon" width="24" height="24">
+                  <use xlink:href="#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
