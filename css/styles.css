@@ -418,6 +418,37 @@ span#studio:hover {
     border-bottom-color: var(--top-line-color-bg);
   }
 }
+.nav-button {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header-elements {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--top-line-color-bg);
+  }
+
+  svg.nav-menu-icon {
+    stroke: var(--NAVY-BLUE);
+    margin-right: 16px;
+  }
+  .nav-menu-button {
+    background: var(--topline-bg);
+  }
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--topline-bg);
+  }
+}
 
 .mobile-menu {
   position: fixed;
@@ -606,31 +637,6 @@ button {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .header-elements {
-    display: flex;
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--top-line-color-bg);
-  }
-
-  svg.nav-menu-icon {
-    stroke: var(--NAVY-BLUE);
-    margin-right: 16px;
-  }
-  .nav-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--bg-color);
-  }
-}
 
 @media screen and (min-width: 768px) {
   .features-thumbnail {
@@ -652,11 +658,10 @@ button {
     border-radius: 4px;
     background-color: var(--CLOUD);
   }
-  svg.nav-menu-icon {
+  .nav-icon {
     display: none;
   }
 }
-
 @media screen and (min-width: 428px) {
   .features-item {
     display: flex;
