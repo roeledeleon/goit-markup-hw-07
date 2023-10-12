@@ -494,7 +494,6 @@ span#studio:hover {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-
 svg.mm_button-icon-default {
   display: block;
 }
@@ -506,7 +505,6 @@ div.mm_button:focus {
   transition: background-color 250ms var(--timing-function);
   background-color: var(--OCEAN);
 }
-
 div.mm_button:hover svg.mm_button-icon-default {
   display: none;
 }
@@ -518,19 +516,16 @@ div.mm_button:hover svg.mm_button-icon-hover {
   color: var(--NAVY-BLUE);
 
   /* Header 2 */
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 1.1111; /* 111.111% */
   letter-spacing: 0.72px;
-  text-transform: capitalize;
 }
 .mm_nav-link:hover {
   color: var(--IRIS);
 }
 .mm_current {
-  color: var(--OCEAN, #404bbf);
+  color: var(--OCEAN);
 }
 .mm_contact-number {
   display: inline-flex;
@@ -538,25 +533,23 @@ div.mm_button:hover svg.mm_button-icon-hover {
   align-items: flex-start;
 
   width: 353px;
-  color: var(--IRIS, #4d5ae5);
+  color: var(--IRIS);
 
   /* Header 2 */
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 1.1111; /* 111.111% */
   letter-spacing: 0.72px;
 }
 .mm_contact-email {
-  color: var(--SLATE, #434455);
+  color: var(--SLATE);
 
   /* Header 3 */
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 120% */
+  line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
 }
 .mm_contact-link:hover,
@@ -564,14 +557,12 @@ div.mm_button:hover svg.mm_button-icon-hover {
   color: var(--OCEAN);
 }
 .mm_contact_number {
-  color: var(--SLATE, #434455);
+  color: var(--SLATE);
 
   /* Header 3 */
-  font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
 }
 .mm_item,
@@ -581,15 +572,15 @@ div.mm_button:hover svg.mm_button-icon-hover {
 }
 .mm_button {
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: var(--section-item-gap);
+  top: var(--section-item-gap);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 24px;
-  height: 24px;
+  width: var(--section-item-gap);
+  height: var(--section-item-gap);
 
   color: var(--BLACK);
   background-color: var(--WHITE);
@@ -678,7 +669,6 @@ div.mm_button:hover svg.mm_button-icon-hover {
     color: var(--secondary-text-color);
     text-align: center;
     /* Header 2 */
-    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1111; /* 111.111% */
@@ -752,12 +742,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .features {
-    padding-top: 96px;
+    padding-top: calc(4 * var(--section-item-gap));
   }
 }
 @media screen and (min-width: 1158px) {
   .features {
-    padding-top: 120px;
+    padding-top: calc(5 * var(--section-item-gap));
   }
 }
 
@@ -779,7 +769,7 @@ button {
   }
   .features-item:nth-child(1),
   .features-item:nth-child(2) {
-    padding-bottom: 72px;
+    padding-bottom: calc(3 * var(--section-item-gap));
   }
 }
 @media screen and (max-width: 767px) {
