@@ -83,7 +83,7 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .container {
     width: var(--sml);
   }
@@ -114,7 +114,7 @@ body {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .top-text {
     text-align: center;
     width: 396px;
@@ -152,7 +152,7 @@ body {
   }
 }
 
-@media screen and (min-width: 428px) and (max-width: 1157px) {
+@media screen and (max-width: 767px) and (max-width: 1157px) {
   .bottom-text {
     color: var(--bottom-text-color);
 
@@ -210,12 +210,19 @@ p,
 ul {
   margin: 0;
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 767px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .section {
     padding-top: 120px;
@@ -481,7 +488,7 @@ span#studio:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  margin: 0 40px;
+  margin-left: 40px;
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
@@ -526,6 +533,11 @@ div.mm_button:hover svg.mm_button-icon-hover {
   color: var(--OCEAN, #404bbf);
 }
 .mm_contact-number {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 353px;
   color: var(--IRIS, #4d5ae5);
 
   /* Header 2 */
@@ -661,7 +673,7 @@ div.mm_button:hover svg.mm_button-icon-hover {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .main-title {
     color: var(--secondary-text-color);
     text-align: center;
@@ -687,8 +699,9 @@ div.mm_button:hover svg.mm_button-icon-hover {
   }
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .main-text {
+    display: inline-flex;
     width: 320px;
   }
 }
@@ -731,7 +744,7 @@ button {
   transition: background-color 250ms var(--timing-function);
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -769,7 +782,7 @@ button {
     padding-bottom: 72px;
   }
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .features-thumbnail {
     display: none;
   }
@@ -838,7 +851,7 @@ button {
   gap: var(--section-item-gap);
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
@@ -874,7 +887,7 @@ button {
 .team {
   background-color: var(--CLOUD);
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -965,7 +978,7 @@ button {
   transition: background-color 250ms var(--timing-function);
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .client-list {
     display: flex;
     flex-wrap: wrap;
@@ -1292,10 +1305,16 @@ a.client6:hover svg.client6-icon-b {
   background-color: var(--NAVY-BLUE);
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .footer-section {
     padding-top: calc(3 * var(--section-item-gap));
     padding-bottom: calc(3 * var(--section-item-gap));
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-section {
+    padding-top: calc(4 * var(--section-item-gap));
+    padding-bottom: calc(4 * var(--section-item-gap));
   }
 }
 @media screen and (min-width: 1158px) {
