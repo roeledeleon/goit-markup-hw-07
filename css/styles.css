@@ -1067,7 +1067,7 @@ a.client3:hover svg.client3-icon-a,
 a.client4:hover svg.client4-icon-a,
 a.client5:hover svg.client5-icon-a,
 a.client6:hover svg.client6-icon-a {
-  transition: background-color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
   display: none;
 }
 a.client1:hover svg.client1-icon-b,
@@ -1076,7 +1076,7 @@ a.client3:hover svg.client3-icon-b,
 a.client4:hover svg.client4-icon-b,
 a.client5:hover svg.client5-icon-b,
 a.client6:hover svg.client6-icon-b {
-  transition: background-color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
   display: block;
 }
 /* End of MAIN Styles */
