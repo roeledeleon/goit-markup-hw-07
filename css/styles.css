@@ -1711,6 +1711,21 @@ svg.close-black-18dp-1b {
   letter-spacing: 0.48px;
 }
 
+.modal .form-name-link:hover,
+.modal .form-name-link:focus {
+  fill: var(--IRIS);
+}
+
+.modal .form-phone-link:hover,
+.modal .form-phone-link:focus {
+  fill: var(--IRIS);
+}
+
+.modal .form-email-link:hover,
+.modal .form-email-link:focus {
+  fill: var(--IRIS);
+}
+
 .agreement {
   display: flex;
   margin-bottom: 16px;
