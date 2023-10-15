@@ -1550,6 +1550,11 @@ a.client6:hover svg.client6-icon-b {
 
   transition: transform 250ms var(--timing-function);
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 380px;
+  }
+}
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
@@ -1600,6 +1605,7 @@ svg.close-black-18dp-1b {
   transition: background-color 250ms var(--timing-function);
   display: block;
 }
+
 .modal-title {
   position: absolute;
 
@@ -1613,7 +1619,11 @@ svg.close-black-18dp-1b {
   width: 360px;
   text-align: center;
 }
-
+@media screen and (max-width: 480px) {
+  .modal-title {
+    right: 10px;
+  }
+}
 .modal-title-text {
   color: var(--primary-text-color);
   /* Body Medium */
@@ -1623,7 +1633,6 @@ svg.close-black-18dp-1b {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
-
 .modal-form-label-text {
   color: var(--LIGHT-SLATE);
   /* Small Text */
@@ -1633,7 +1642,6 @@ svg.close-black-18dp-1b {
   line-height: 14px; /* 116.667% */
   letter-spacing: 0.48px;
 }
-
 .modal .form {
   position: absolute;
   top: 80px;
@@ -1641,7 +1649,11 @@ svg.close-black-18dp-1b {
   align-items: center;
   width: 360px;
 }
-
+@media screen and (max-width: 480px) {
+  .modal .form {
+    right: 10px;
+  }
+}
 .modal .form-input {
   display: block;
   padding-top: 9px;
