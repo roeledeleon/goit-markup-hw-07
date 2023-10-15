@@ -1676,7 +1676,7 @@ svg.close-black-18dp-1b {
 .modal .comment-input {
   padding-left: 16px;
 }
-.modal .form-field + .form-field {
+.modal .form-field:not(:first-child) {
   margin-top: 8px;
 }
 .modal .form-input-overlay {
@@ -1685,13 +1685,11 @@ svg.close-black-18dp-1b {
 .modal .form-input:hover,
 .modal .form-input:focus {
   border: 1px solid var(--IRIS);
-
   transition: border 250ms var(--timing-function);
 }
 .modal .form-input:hover + .form-icon,
 .modal .form-input:focus + .form-icon {
   fill: var(--IRIS);
-
   transition: fill 250ms var(--timing-function);
 }
 .modal .form-icon {
