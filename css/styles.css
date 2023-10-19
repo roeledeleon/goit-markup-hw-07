@@ -250,9 +250,11 @@ ul {
 
 #studio {
   color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
 }
 #studio-footer {
   color: var(--secondary-text-color);
+  transition: color 250ms var(--timing-function);
 }
 .logo-main {
   display: flex;
@@ -295,7 +297,6 @@ ul {
 }
 .nav-item {
   display: flex;
-  align-items: center;
 }
 .nav-item + .nav-item {
   margin-left: 40px;
@@ -307,6 +308,16 @@ ul {
 }
 .nav-item:hover {
   color: var(--highlight-nav-text-color);
+}
+.current::after {
+  content: " ";
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--IRIS);
+  position: relative;
+  top: 24px;
 }
 .nav-link.current {
   border-bottom-width: 4px;
@@ -323,17 +334,11 @@ ul {
 .nav-item a.item:hover,
 .nav-item a.item:focus {
   color: var(--highlight-nav-text-color);
-  transition: background-color 250ms var(--timing-function);
   text-decoration: none;
-
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--IRIS);
-  border-radius: 2px;
 }
+
 span#studio:hover {
   color: var(--highlight-nav-text-color);
-  transition: background-color 250ms var(--timing-function);
   text-decoration: none;
 }
 
@@ -347,7 +352,6 @@ span#studio:hover {
   align-items: center;
   margin-left: 40px;
 }
-
 @media screen and (min-width: 768px) {
   .contact-list {
     display: inline-flex;
@@ -362,7 +366,6 @@ span#studio:hover {
     margin-left: 0px;
   }
 }
-
 @media screen and (min-width: 1158px) {
   .contact-list {
     display: inline-flex;
@@ -392,7 +395,6 @@ span#studio:hover {
   transition: background-color 250ms var(--timing-function);
   text-decoration: none;
 }
-
 @media only screen and (min-width: 768px) {
   .contact-link {
     color: var(--bottom-text-color);
@@ -1574,35 +1576,31 @@ a.client6:hover svg.client6-icon-b {
   background-color: var(--WHITE);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
+
+  cursor: pointer;
 }
 .modal-button:hover,
 .modal-button:focus {
-  transition: background-color 250ms var(--timing-function);
   background-color: var(--OCEAN);
 }
 .modal-button:hover .modal-button-icon,
 .modal-button:focus .modal-button-icon {
   fill: var(--IRIS);
-  transition: fill 250ms var(--timing-function);
-}
-.modal-button-icon {
-  fill: currentColor;
-  transition: fill 250ms var(--timing-function);
-
-  margin-left: 0px;
 }
 svg.close-black-18dp-1a {
   display: block;
+  fill: currentcolor;
 }
 svg.close-black-18dp-1b {
   display: none;
 }
 .modal-button:hover .close-black-18dp-1a {
-  transition: background-color 250ms var(--timing-function);
   display: none;
 }
 .modal-button:hover .close-black-18dp-1b {
-  transition: background-color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
   display: block;
 }
 
