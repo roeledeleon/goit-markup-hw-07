@@ -1230,7 +1230,7 @@ a.client6:hover svg.client6-icon-b {
   padding: 40px 32px;
   /* style */
 
-  opacity: 0.95;
+  opacity: 0.9;
   background-color: var(--project-overlay-bg-color);
 
   transition: transform 250ms var(--timing-function);
