@@ -256,6 +256,9 @@ ul {
   color: var(--secondary-text-color);
   transition: color 250ms var(--timing-function);
 }
+#studio-footer:hover {
+  color: var(--IRIS);
+}
 .logo-main {
   display: flex;
   align-items: center;
